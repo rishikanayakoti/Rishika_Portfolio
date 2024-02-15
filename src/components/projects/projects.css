@@ -1,0 +1,53 @@
+.projects__row {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between;
+  margin-bottom: 20px; /* Adjust spacing between rows as needed */
+}
+
+.card {
+  width: calc(30% - 10px); /* Adjust card width based on desired spacing */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px; /* Add margin between cards */
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+}
+
+.card__content {
+  padding: 10px;
+}
+
+.card__title {
+  margin-top: 0;
+}
+
+.card__technologies ul {
+  padding: 0;
+  margin: 0;
+}
+
+.card__technologies li {
+  list-style-type: none;
+}
+
+.card__description {
+  margin-top: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 10px); /* Make cards 50% width on screens <= 768px */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%; /* Make cards full width on screens <= 480px */
+  }
+}

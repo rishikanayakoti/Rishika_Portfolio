@@ -1,0 +1,62 @@
+.section__title{
+    text-align:center;
+    padding-bottom:10px;
+    padding-top:100px;
+}
+
+  .skillicons {
+    display: flex;
+    padding-top:50px;
+    padding-left:300px;
+    flex-wrap: wrap; /* Allow icons to wrap to the next line */
+    justify-content: center; /* Center align icons horizontally */
+    align-items:center;
+  }
+  
+  .skill {
+    display: flex;
+    align-items: center;
+    margin: 10px; /* Add margin to create space between icons */
+    width: calc(50% - 20px); /* Set the width of each skill to half of the container width, minus margin */
+  }
+  
+  .skill i {
+    font-size: 60px; /* Adjust icon size as needed */
+    margin-right: 5px; /* Add space between icon and skill name */
+  }
+  
+
+  @media only screen and (max-width: 768px) {
+    .skillicons {
+      padding-left: 100px; /* Reset the left padding for smaller screens */
+      padding-right: 10px; /* Add right padding for spacing */
+      justify-content: center; /* Center align icons horizontally */
+      align-items:center;
+    }
+  
+    .skill {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .skillicons {
+      flex-direction: column; /* Stack icons vertically on smaller screens */
+      /* Center align icons vertically */
+      padding-left:100px;
+      padding-top: 20px; /* Adjust top padding for spacing */
+      justify-content: center; /* Center align icons horizontally */
+      align-items:center;
+    }
+  
+    .skill {
+      width: 100%; /* Full width for icons on smaller screens */
+    }
+  
+    .skill i {
+      
+      font-size: 40px; /* Decrease icon size for smaller screens */
+      justify-content: center; /* Center align icons horizontally */
+      align-items:center;
+    }
+  }
