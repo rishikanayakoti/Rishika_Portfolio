@@ -21,7 +21,7 @@ const Skills = () => (
     <SkillIcon iconClass="fab fa-js" skillName="ExpressJS" />
     <SkillIcon iconClass="fas fa-database" skillName="SQL" />
     <SkillIcon iconClass="fas fa-chart-line" skillName="Tableau"/>
-    <SkillIcon iconClass="faa fa-r-project" skillName="R" />
+    <SkillIcon iconClass="fab fa-r-project" skillName="R" />
     <SkillIcon iconClass="fab fa-python" skillName="Python" />
     <SkillIcon iconClass="fab fa-java" skillName="Java" />
     <SkillIcon iconClass="fab fa-github" skillName="Git"/>

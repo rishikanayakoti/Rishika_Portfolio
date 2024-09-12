@@ -1,17 +1,17 @@
 import React from 'react'
 import "./about.css";
 import AboutImg from "../../assests/Y.jpeg";
-import Info from "./Info";
 import CV from "../../assests/RISHIKA_NAYAKOTI.pdf";
 const About = () => {
   return (
     <section className="about section" id="about">
-      <div className="about__container container grid">
+      <br></br> 
+      <div className="about__container container grid">  
       <h2 className="about__title ">About me</h2>
       <span className="section__subtitle"></span>
         <img src={AboutImg} alt="" className="about__img" />
         <div className="about__data">
-          {/* <Info /> */}
+          
           <p className="about__description">
           A dedicated software developer with a passion for crafting elegant solutions to complex problems. 
           I thrive on the challenge of solving intricate problems and am constantly seeking new ways to 
