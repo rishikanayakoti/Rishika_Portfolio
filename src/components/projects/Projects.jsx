@@ -15,7 +15,7 @@ const ProjectCard = ({ title, imageUrl, technologies, description }) => {
   };
 const Projects = () => {
   return (
-    <section className="projects section">
+    <section className="projects section" id='projects'>
          <div className="projects__container container ">
       <h2 className="section__title  ">Projects</h2>
       <div className="projects__row">

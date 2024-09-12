@@ -50,7 +50,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="contact__content">
-                    <h3 className="contact__title">Write me your project.</h3>
+                    <h3 className="contact__title">Let's Connect!</h3>
                     <form ref={form} onSubmit={sendEmail}className="contact__form">
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Name</label>
@@ -63,8 +63,8 @@ const Contact = () => {
 
                         </div>
                         <div className="contact__form-div contact__form-area">
-                            <label className="contact__form-tag">Project</label>
-                            <textarea name='project' cols='30' rows="10" className="contact__form-input" placeholder="Write about your project" />
+                            <label className="contact__form-tag">Message</label>
+                            <textarea name='project' cols='30' rows="10" className="contact__form-input" placeholder="" />
                         </div>
                         <button className="button mainbutton button--flex">
                             Send message <svg

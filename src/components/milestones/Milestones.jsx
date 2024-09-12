@@ -3,7 +3,7 @@ import "./milestones.css";
 const Milestones = () => {
     return (
 
-        <section className="milestones section">
+        <section className="milestones section" id='milestones'>
             <div className="milestones__container container ">
                 <h2 className="section__title">Milestones</h2>
                 <div class="timeline">

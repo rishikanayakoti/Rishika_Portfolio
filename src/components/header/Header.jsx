@@ -27,23 +27,24 @@ const Header = () => {
                 <i className="uil uil-user nav__icon"></i>About
               </a>
             </li>
+           
             <li className="nav__item">
-              <a href="#skills"onClick={()=>setActiveNav("#skills")} className={activeNav=="skills"? "nav__link active-link": "nav__link"}> 
+              <a href="#skills"onClick={()=>setActiveNav("skills")} className={activeNav=="skills"? "nav__link active-link": "nav__link"}> 
                 <i className="uil uil-channel nav__icon"></i>Skills
               </a>
             </li>
             <li className="nav__item">
-              <a href="#projects" onClick={()=>setActiveNav("#projects")} className={activeNav=="projects"? "nav__link active-link": "nav__link"}> 
+              <a href="#projects" onClick={()=>setActiveNav("projects")} className={activeNav=="projects"? "nav__link active-link": "nav__link"}> 
                 <i className="uil uil-file nav__icon"></i>Projects
               </a>
             </li>
             <li className="nav__item">
-              <a href="#milestones" onClick={()=>setActiveNav("#milestones")} className={activeNav=="milestones"? "nav__link active-link": "nav__link"}> 
+              <a href="#milestones" onClick={()=>setActiveNav("milestones")} className={activeNav=="milestones"? "nav__link active-link": "nav__link"}> 
                 <i className="uil uil-star nav__icon"></i>Milestones
               </a>
             </li>
             <li className="nav__item">
-              <a href="#contact" onClick={()=>setActiveNav("#contact")} className={activeNav=="contact"? "nav__link active-link": "nav__link"}>
+              <a href="#contact" onClick={()=>setActiveNav("contact")} className={activeNav=="contact"? "nav__link active-link": "nav__link"}>
                 <i className="uil uil-message nav__icon"></i>Contact
               </a>
             </li>

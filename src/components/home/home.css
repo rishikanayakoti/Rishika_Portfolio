@@ -108,7 +108,7 @@
 @media screen and (max-width:992px){
    .home__content{
     grid-template-columns: 100px repeat(2,1fr);
-    column-gap:1.25rem;
+    column-gap:0rem;
    }
 
    .home__subtitle{

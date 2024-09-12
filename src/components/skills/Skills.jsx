@@ -133,7 +133,7 @@ const SkillIcon = ({ iconClass, skillName }) => (
 
 const Skills = () => (
   
-  <div className="skills">
+  <div className="skills section " id='skills'>
     <h2 className="section__title">Skills</h2>
     <div className="skillicons">
     <SkillIcon iconClass="fab fa-html5" skillName="HTML5" />
@@ -142,9 +142,11 @@ const Skills = () => (
     <SkillIcon iconClass="fab fa-react" skillName="ReactJS"/>
     <SkillIcon iconClass="fab fa-node-js" skillName="NodeJS" />
     <SkillIcon iconClass="fab fa-js" skillName="ExpressJS" />
-    <SkillIcon iconClass="fas fa-database" skillName="MongoDB" />
-    <SkillIcon iconClass="fab fa-bootstrap" skillName="Bootstrap" />
-    <SkillIcon iconClass="fas fa-code" skillName="C" />
+    <SkillIcon iconClass="fas fa-database" skillName="SQL" />
+    {/* <SkillIcon iconClass="fab fa-bootstrap" skillName="Bootstrap" /> */}
+    <SkillIcon iconClass="fas fa-chart-line" skillName="Tableau"/>
+
+    <SkillIcon iconClass="fab fa-r-project" skillName="R" />
     <SkillIcon iconClass="fab fa-python" skillName="Python" />
     <SkillIcon iconClass="fab fa-java" skillName="Java" />
     <SkillIcon iconClass="fab fa-github" skillName="Git"/>

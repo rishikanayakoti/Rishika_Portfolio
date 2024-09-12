@@ -2,7 +2,7 @@
     position:fixed;
     right:2.5rem;
     bottom:-20%;
-    background-color:var(--title-color);
+    background-color:rgb(221, 224, 227);
     opacity:0.8;
     padding:0.3rem 0.5rem;
     border-radius:0.4rem;
@@ -12,11 +12,11 @@
 
 .scollup__icon{
     font-size:1.5rem;
-    color:var(--container-color);
+    color:white;
 }
 
 .scrollup:hover{
-    background-color:var(--title-color-dark);
+    background-color:rgb(219, 219, 208);
 }
 
 .show-scroll{

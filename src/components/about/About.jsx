@@ -6,20 +6,22 @@ import CV from "../../assests/RISHIKA_NAYAKOTI.pdf";
 const About = () => {
   return (
     <section className="about section" id="about">
-
       <div className="about__container container grid">
-      <h2 className="section__title  ">About me</h2>
-      <span className="section__subtitle">My introduction</span>
+      <h2 className="about__title ">About me</h2>
+      <span className="section__subtitle"></span>
         <img src={AboutImg} alt="" className="about__img" />
         <div className="about__data">
-          <Info />
+          {/* <Info /> */}
           <p className="about__description">
           A dedicated software developer with a passion for crafting elegant solutions to complex problems. 
           I thrive on the challenge of solving intricate problems and am constantly seeking new ways to 
-          innovate and improve. My enthusiasm for coding is matched only by my drive to collaborate 
-          effectively and contribute meaningfully to innovative projects. 
+          innovate and improve. 
           I am excited to embark on this journey, eager to absorb knowledge, and committed to making a 
-          positive impact in the world of software development.
+          positive impact in the world of software development. 
+
+          <br></br>
+          I am driven by the belief that success is not the goal, but rather adding value through my work.
+           As Albert Einstein once said, <b>Strive not to be a success, but rather to be of value.</b> This mindset pushes me to continuously improve, innovate, and make meaningful contributions in every project I undertake.
           </p>
           <a download="" href={CV} className="button button--flex">Download CV
           <svg
