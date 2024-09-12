@@ -68,6 +68,12 @@ over 1000 people.</p>
                             <p>Participated in Geetha sloka-telling competition by Geetha Prachara Samithi at national level</p>
                         </div>
                     </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            
+                            <p>Research Publication: "Data-Driven Decisions: A Review of Machine Learning Models, Soil Sensors, and Crop Recommendation Systems," published in the Grenze International Journal of Engineering and Technology in 2024.</p>
+                        </div>
+                    </div>
                     {/* <div class="timeline-item">
                         <div class="timeline-content">
                             {/* <h3>February 2022</h3> */}

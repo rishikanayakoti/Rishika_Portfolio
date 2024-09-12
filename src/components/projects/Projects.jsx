@@ -57,11 +57,7 @@ const Projects = () => {
             
             description="Python-powered AI crossword solver intelligently cracks crossword puzzles using backtracking algorithm."
           />
-          {/* <ProjectCard
-            imageUrl="https://i.imgur.com/GlLWt22.png"
-           
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut aliquet eros."
-          /> */}
+          
         </div>
       </div>
     </section>

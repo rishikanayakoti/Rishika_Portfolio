@@ -13,14 +13,7 @@ const Contact = () => {
         publicKey: 'uEeyCPO_VNHt34Sqv',
       })
       e.target.reset()
-    //   .then(
-    //     () => {
-    //       console.log('SUCCESS!');
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error.text);
-    //     },
-    //   );
+    
   };
     return (
         <section className="contact section" id="contact">
@@ -41,12 +34,7 @@ const Contact = () => {
                             <a href="https://api.whatsapp.com/send?phone=919652807973&text=Hello,%20I%20would%20like%20to%20connect%20with%20you!
 "className="contact__button">Write me{" "} <i className="bx bx-pencil contact__button-icon"></i></a>
                         </div>
-                        {/* <div className="contact__card"><i className="bx bx contact__card-icon"></i>
-                    <h3 className="contact__card-title">
-                    </h3>
-                    <span className="contact__card-data"></span>
-                    <a href=""className="contact__button">Write me{" "} <i className="bx bx-right-arro-alt contact__button-icon"></i></a>
-                    </div> */}
+                       
                     </div>
                 </div>
                 <div className="contact__content">
