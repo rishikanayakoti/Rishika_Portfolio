@@ -1,4 +1,3 @@
-
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -11,15 +10,25 @@
   padding: 20px;
   display: flex;
   align-items: flex-start;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and scale */
 }
+
+
 
 .timeline-content {
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: #fdfdfd;
   border-radius: 10px;
-  margin-bottom: 1px; 
+  margin-bottom: 1px;
+
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color change */
 }
 
+.timeline-content:hover {
+  background-color: #C8102E; /* Hover background color */
+  color: #fdfdfd; /* Hover text color */
+  transform: scale(1.02);
+}
 
 .timeline-content::before {
   content: "";
@@ -45,7 +54,7 @@
   .timeline-item {
     flex-direction: column;
     align-items: center;
-    margin-bottom:5px;
+    margin-bottom: 5px;
   }
   
   .timeline-content {

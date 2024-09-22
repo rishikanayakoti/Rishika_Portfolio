@@ -5,16 +5,16 @@ const Contact = () => {
 
     const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-    emailjs
-      .sendForm('service_ffvinth', 'template_hdjz3vu', form.current, {
-        publicKey: 'uEeyCPO_VNHt34Sqv',
-      })
-      e.target.reset()
-    
-  };
+        emailjs
+            .sendForm('service_ffvinth', 'template_hdjz3vu', form.current, {
+                publicKey: 'uEeyCPO_VNHt34Sqv',
+            })
+        e.target.reset()
+
+    };
     return (
         <section className="contact section" id="contact">
             <h2 className="section__title">Get in touch!</h2>
@@ -34,12 +34,12 @@ const Contact = () => {
                             <a href="https://api.whatsapp.com/send?phone=919652807973&text=Hello,%20I%20would%20like%20to%20connect%20with%20you!
 "className="contact__button">Write me{" "} <i className="bx bx-pencil contact__button-icon"></i></a>
                         </div>
-                       
+
                     </div>
                 </div>
                 <div className="contact__content">
                     <h3 className="contact__title">Let's Connect!</h3>
-                    <form ref={form} onSubmit={sendEmail}className="contact__form">
+                    <form ref={form} onSubmit={sendEmail} className="contact__form">
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Name</label>
                             <input type="text" name="name" className="contact__form-input" placeholder="Enter your name" />

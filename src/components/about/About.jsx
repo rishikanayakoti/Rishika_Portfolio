@@ -1,19 +1,38 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import "./about.css";
-import AboutImg from "../../assests/Y.jpeg";
-import CV from "../../assests/RISHIKA_NAYAKOTI.pdf";
+import AboutImg from "../../assests/pro2.jpg";
+import CV from "../../assests/Rishika_N.pdf";
+
 const About = () => {
-  return (
-    <section className="about section" id="about">
-      <br></br> 
-      <div className="about__container container grid">  
-      <h2 className="about__title ">About me</h2>
-      <span className="section__subtitle"></span>
-        <img src={AboutImg} alt="" className="about__img" />
-        <div className="about__data">
-          
-          <p className="about__description">
-          A dedicated software developer with a passion for crafting elegant solutions to complex problems. 
+
+
+  const mainText = "A dedicated software developer with a passion for crafting elegant solutions to complex problems. I thrive on the challenge of solving intricate problems and am constantly seeking new ways to innovate and improve. I am excited to embark on this journey, eager to absorb knowledge, and committed to making a positive impact in the world of software development. I am driven by the belief that success is not the goal, but rather adding value through my work.";
+
+  const quote = "As Albert Einstein once said, <q>Strive not to be a success, but rather to be of value.</q> This mindset pushes me to continuously improve, innovate, and make meaningful contributions in every project I undertake.";
+
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    if (textRef.current) {
+      const wrappedMainText = mainText.split(' ').map((word, index) => `<span class="word" key=${index}>${word}</span>`).join(' ');
+      textRef.current.innerHTML = `
+              ${wrappedMainText} 
+              <span class="quote">${quote}</span>
+          `;
+   
+  }
+}, []);
+    return (
+      <section className="about section" id="about">
+      
+        <div className="about__container container grid">
+          <h2 className="about__title ">About me</h2>
+          <span className="section__subtitle"></span>
+          <img src={AboutImg} alt="" className="about__img" />
+          <div className="about__data">
+
+            <p className="about__description" ref={textRef}>
+              {/* A dedicated software developer with a passion for crafting elegant solutions to complex problems. 
           I thrive on the challenge of solving intricate problems and am constantly seeking new ways to 
           innovate and improve. 
           I am excited to embark on this journey, eager to absorb knowledge, and committed to making a 
@@ -22,9 +41,15 @@ const About = () => {
           <br></br>
           I am driven by the belief that success is not the goal, but rather adding value through my work.
            As Albert Einstein once said, <b>Strive not to be a success, but rather to be of value.</b> This mindset pushes me to continuously improve, innovate, and make meaningful contributions in every project I undertake.
-          </p>
-          <a download="" href={CV} className="button button--flex">Download CV
-          <svg
+          </p> */}
+              {/* {words.map((word, index) => (
+                <span key={index} className="word">
+                    {word}&nbsp;
+                </span>
+            ))} */}
+            </p>
+            <a download="" href={CV} className="button button--flex">Download CV
+              <svg
                 class="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -49,11 +74,11 @@ const About = () => {
                   fill="var(--container-color)"
                 ></path>
               </svg></a>
+          </div>
         </div>
-      </div>
 
-    </section>
-  )
-}
+      </section>
+    )
+  }
 
 export default About

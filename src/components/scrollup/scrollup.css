@@ -1,46 +1,51 @@
-.scrollup{
-    position:fixed;
-    right:2.5rem;
-    bottom:-20%;
-    background-color:rgb(221, 224, 227);
-    opacity:0.8;
-    padding:0.3rem 0.5rem;
-    border-radius:0.4rem;
-    z-index:var(--z-tooltip);
+.scrollup {
+    position: fixed;
+    right: 1.5rem; /* Adjusted right position */
+    bottom: -10%; /* Adjusted bottom position */
+    background-color: #f38080;
+    opacity: 0.8;
+    padding: 0.2rem 0.4rem; /* Reduced padding */
+    border-radius: 0.3rem; /* Reduced border-radius */
+    z-index: var(--z-tooltip);
     transition: .4s;
 }
 
-.scollup__icon{
-    font-size:1.5rem;
-    color:white;
+.scrollup__icon {
+    font-size: 1.25rem; /* Reduced icon size */
+    color: white; /* Ensure icon color is white */
 }
 
-.scrollup:hover{
-    background-color:rgb(219, 219, 208);
+.scrollup__icon:hover {
+    color: white; /* Ensure icon color remains white on hover */
 }
 
-.show-scroll{
-    bottom:3rem;
+.scrollup:hover {
+    background-color: #C8102E; /* Change background color on hover */
 }
 
-@media screen and (max-width:992px){
-    .scrollup{
-        right:1.5rem;
-        padding:0.25rem 0.4rem;
+.show-scroll {
+    bottom: 2rem; /* Adjusted bottom position for visibility */
+}
+
+@media screen and (max-width: 992px) {
+    .scrollup {
+        right: 1rem; /* Adjusted right position */
+        padding: 0.2rem 0.3rem; /* Reduced padding */
     }
-    .scrollup__icon{
-        font-size:1.25rem;
+
+    .scrollup__icon {
+        font-size: 1.1rem; /* Reduced icon size */
     }
 }
 
-@media screen and (max-width:768px){
-    .show-scroll{
-        bottom:4rem;
+@media screen and (max-width: 768px) {
+    .show-scroll {
+        bottom: 3rem; /* Adjusted bottom position for visibility */
     }
 }
 
-@media screen and (max-width:350px){
-    .scrollup{
-        right:1rem;
+@media screen and (max-width: 350px) {
+    .scrollup {
+        right: 0.5rem; /* Adjusted right position */
     }
 }
